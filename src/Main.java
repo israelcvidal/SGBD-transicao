@@ -147,7 +147,6 @@ public class Main {
 		Scanner scan = new Scanner(System.in);
 		int opcao=1, evento, id;
 		Grafo grafo = new Grafo();
-		Transacao tr = new Transacao();
 		boolean bool;
 		
 		
@@ -214,8 +213,6 @@ public class Main {
 			
 			if(opcao != 0 && opcao != 1 && opcao != 2)
 				System.out.println("Opcao invalida!");
-			
-		
 		}
 		
 		
