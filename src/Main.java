@@ -22,7 +22,7 @@ public class Main {
 		idTransacoes = transacoes.keySet();
 		it = idTransacoes.iterator();
 
-		System.out.println("id das transacoes INICIADAS:");
+		System.out.println("ID das transacoes INICIADAS:");
 		while(it.hasNext()){
 			System.out.print(transacoes.get(it.next()).getId() +  " ");	
 		}
@@ -42,7 +42,7 @@ public class Main {
 		idTransacoes = transacoes.keySet();
 		it = idTransacoes.iterator();
 
-		System.out.println("id das transacoes ATIVAS:");
+		System.out.println("ID das transacoes ATIVAS:");
 		while(it.hasNext()){
 			System.out.print(transacoes.get(it.next()).getId() +  " ");	
 		}
@@ -62,7 +62,7 @@ public class Main {
 		idTransacoes = transacoes.keySet();
 		it = idTransacoes.iterator();
 
-		System.out.println("id das transacoes EM PROCESSO DE CANCELAMENTO:");
+		System.out.println("ID das transacoes EM PROCESSO DE CANCELAMENTO:");
 		while(it.hasNext()){
 			System.out.print(transacoes.get(it.next()).getId() +  " ");	
 		}
@@ -82,7 +82,7 @@ public class Main {
 		idTransacoes = transacoes.keySet();
 		it = idTransacoes.iterator();
 
-		System.out.println("id das transacoes EM PROCESSO DE EFETIVACAO:");
+		System.out.println("ID das transacoes EM PROCESSO DE EFETIVACAO:");
 		while(it.hasNext()){
 			System.out.print(transacoes.get(it.next()).getId() +  " ");	
 		}
@@ -102,7 +102,7 @@ public class Main {
 		idTransacoes = transacoes.keySet();
 		it = idTransacoes.iterator();
 
-		System.out.println("id das transacoes EFETIVADAS:");
+		System.out.println("ID das transacoes EFETIVADAS:");
 		while(it.hasNext()){
 			System.out.print(transacoes.get(it.next()).getId() +  " ");	
 		}
@@ -122,15 +122,14 @@ public class Main {
 		idTransacoes = transacoes.keySet();
 		it = idTransacoes.iterator();
 
-		System.out.println("id das transacoes FINALIZADAS:");
+		System.out.println("ID das transacoes FINALIZADAS:");
 		while(it.hasNext()){
 			System.out.print(transacoes.get(it.next()).getId() +  " ");	
 		}
 		System.out.println();
 		
 	}
-	
-	
+
 	public static void mostrar_eventos(Grafo grafo){
 		mostrar_iniciada(grafo);
 		mostrar_ativa(grafo);
@@ -139,9 +138,6 @@ public class Main {
 		mostrar_efetivada(grafo);
 		mostrar_finalizada(grafo);
 	}
-	
-	
-	
 
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
@@ -154,7 +150,7 @@ public class Main {
 			//escolher o evento para a trasacao.
 			bool = false;
 
-			System.out.println("Escolha uma opcao:  \n 0) Encerrar \n 1) Criar Evento \n 2) Mostrar eventos" ); 
+			System.out.println("Escolha uma opcao:  \n 0) Encerrar.\n 1) Disparar Evento.\n 2) Mostrar Transacoes." ); 
 			opcao = scan.nextInt();
 			
 			if(opcao == 1){
@@ -214,14 +210,6 @@ public class Main {
 			if(opcao != 0 && opcao != 1 && opcao != 2)
 				System.out.println("Opcao invalida!");
 		}
-		
-		
-		
-		
-		
-	 
-		
-		
 	}
 
 }
